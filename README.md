@@ -36,3 +36,17 @@ g++ -std=c++17 -o enrollment main.cpp class.cpp todo.cpp
 - List all students in a class
 - List all classes a student is enrolled in
 - Check enrolment status
+
+## Building
+
+Requires a C++17-compatible compiler (GCC 9+ or Clang 10+).
+
+```bash
+# Compile
+g++ -std=c++17 -O2 -Wall -o main main.cpp
+
+# Or with CMake (if CMakeLists.txt is present)
+cmake -B build && cmake --build build
+```
+
+No external libraries required — standard library only.
